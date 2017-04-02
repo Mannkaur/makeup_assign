@@ -1,0 +1,60 @@
+<html>
+ <head>
+  <title>Currency Convertor</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+ </head>
+ <body>
+  <h1>Currency Convertor</h1>
+  <br>
+  <table >
+   <tr>
+	<th align=center>From</th>
+	<td rowspan=3><hr></td>
+	<th align=center>To</th>
+   </tr>
+   
+   <tr>
+	<td align=center>
+		<select id="dropdown1">
+		<option value="AUD">Australian Dollar</option>
+		<option value="GBP">British Pound</option>
+		<option value="CAD">Canadian Dollar</option>
+		<option value="EUR">Euro</option>
+		<option value="INR">Indian Rupee</option>
+		<option value="USD">US Dollar</option>
+		</select>
+	</td>
+	<td align=center>
+		<select id="dropdown2">
+		<option value="AUD">Australian Dollar</option>
+		<option value="GBP">British Pound</option>
+		<option value="CAD">Canadian Dollar</option>
+		<option value="EUR">Euro</option>
+		<option value="INR">Indian Rupee</option>
+		<option value="USD">US Dollar</option>
+		</select>
+	</td>
+   </tr>
+
+   <tr>
+	<td align=center>
+		<input type="text" id="from" onChange="convert()"/>
+	</td>
+	<td align=center>
+		<input type="text" id="to" readonly/>
+	</td>
+   </tr>
+
+   <tr>
+	<td align=center colspan=3>
+		<button type="submit" name="convert" value="convert" onClick="convert()"> Convert </button>
+   </tr>
+  </table>
+
+  
+   
+</h2>
+  <script type="text/javascript" src="app.js"></script>  
+</body>
+</html>
